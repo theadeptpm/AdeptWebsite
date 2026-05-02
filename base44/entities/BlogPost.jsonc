@@ -1,0 +1,38 @@
+{
+  "name": "BlogPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "featured_image": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "description": "External URL if the blog redirects externally"
+    }
+  },
+  "required": [
+    "title",
+    "category"
+  ]
+}
